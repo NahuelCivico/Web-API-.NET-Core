@@ -1,0 +1,10 @@
+C:\Users\nahue\source\repos\WebAPICountries\Db\bin\Debug\Db.dacpac
+C:\Users\nahue\source\repos\WebAPICountries\Db\bin\Debug\Db.dll
+C:\Users\nahue\source\repos\WebAPICountries\Db\bin\Debug\Db.pdb
+C:\Users\nahue\source\repos\WebAPICountries\Db\obj\Debug\Db.sqlprojAssemblyReference.cache
+C:\Users\nahue\source\repos\WebAPICountries\Db\obj\Debug\Model.xml
+C:\Users\nahue\source\repos\WebAPICountries\Db\obj\Debug\refactor.xml
+C:\Users\nahue\source\repos\WebAPICountries\Db\obj\Debug\postdeploy.sql
+C:\Users\nahue\source\repos\WebAPICountries\Db\obj\Debug\predeploy.sql
+C:\Users\nahue\source\repos\WebAPICountries\Db\obj\Debug\Db.dll
+C:\Users\nahue\source\repos\WebAPICountries\Db\obj\Debug\Db.pdb

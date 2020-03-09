@@ -1,0 +1,11 @@
+C:\Users\nahue\source\repos\WebAPICountries\WebAPICountries\bin\Debug\netcoreapp2.0\WebAPICountries.deps.json
+C:\Users\nahue\source\repos\WebAPICountries\WebAPICountries\bin\Debug\netcoreapp2.0\WebAPICountries.runtimeconfig.json
+C:\Users\nahue\source\repos\WebAPICountries\WebAPICountries\bin\Debug\netcoreapp2.0\WebAPICountries.runtimeconfig.dev.json
+C:\Users\nahue\source\repos\WebAPICountries\WebAPICountries\bin\Debug\netcoreapp2.0\WebAPICountries.dll
+C:\Users\nahue\source\repos\WebAPICountries\WebAPICountries\bin\Debug\netcoreapp2.0\WebAPICountries.pdb
+C:\Users\nahue\source\repos\WebAPICountries\WebAPICountries\obj\Debug\netcoreapp2.0\WebAPICountries.csproj.CoreCompileInputs.cache
+C:\Users\nahue\source\repos\WebAPICountries\WebAPICountries\obj\Debug\netcoreapp2.0\WebAPICountries.AssemblyInfoInputs.cache
+C:\Users\nahue\source\repos\WebAPICountries\WebAPICountries\obj\Debug\netcoreapp2.0\WebAPICountries.AssemblyInfo.cs
+C:\Users\nahue\source\repos\WebAPICountries\WebAPICountries\obj\Debug\netcoreapp2.0\WebAPICountries.dll
+C:\Users\nahue\source\repos\WebAPICountries\WebAPICountries\obj\Debug\netcoreapp2.0\WebAPICountries.pdb
+C:\Users\nahue\source\repos\WebAPICountries\WebAPICountries\obj\Debug\netcoreapp2.0\WebAPICountries.csprojAssemblyReference.cache
