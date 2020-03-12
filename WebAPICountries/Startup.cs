@@ -6,8 +6,11 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.PlatformAbstractions;
 using Microsoft.IdentityModel.Tokens;
+using Swashbuckle.AspNetCore.Swagger;
 using System;
+using System.IO;
 using System.Text;
 using WebAPICountries.Models;
 
@@ -35,18 +38,36 @@ namespace WebAPICountries
                 .AddJwtBearer(options =>
                  options.TokenValidationParameters = new TokenValidationParameters
                  {
-                    ValidateIssuer = true,
-                    ValidateAudience = true,
-                    ValidateLifetime = true,
-                    ValidateIssuerSigningKey = true,
-                    ValidIssuer = "yourdomain.com",
-                    ValidAudience = "yourdomain.com",
-                    IssuerSigningKey = new SymmetricSecurityKey(
+                     ValidateIssuer = true,
+                     ValidateAudience = true,
+                     ValidateLifetime = true,
+                     ValidateIssuerSigningKey = true,
+                     ValidIssuer = "yourdomain.com",
+                     ValidAudience = "yourdomain.com",
+                     IssuerSigningKey = new SymmetricSecurityKey(
                     Encoding.UTF8.GetBytes(Configuration["Llave_super_secreta"])),
-                    ClockSkew = TimeSpan.Zero
+                     ClockSkew = TimeSpan.Zero
                  });
 
             services.AddMvc().AddJsonOptions(ConfigureJson);
+
+            services.AddSwaggerGen(config =>
+            {
+                config.SwaggerDoc("v1", new Swashbuckle.AspNetCore.Swagger.Info()
+                {
+                    Title = "Ejemplo Swagger"
+                });
+
+                config.IncludeXmlComments(Path.Combine(PlatformServices.Default.Application.ApplicationBasePath, "WebAPICountries.xml"));
+
+                config.AddSecurityDefinition("Bearer", new OAuth2Scheme()
+                {
+                    Description = "Authentication with Auth0",
+                    TokenUrl = "",
+                    Flow = "password",
+                    Type = "oauth2"
+                });
+            });
         }
 
         private void ConfigureJson(MvcJsonOptions obj)
@@ -64,6 +85,8 @@ namespace WebAPICountries
 
             app.UseAuthentication();
             app.UseMvc();
+            app.UseSwagger();
+            app.UseSwaggerUI(config => config.SwaggerEndpoint("/swagger/v1/swagger.json", "API EJEMPLO SWAGGER"));
         }
     }
 }

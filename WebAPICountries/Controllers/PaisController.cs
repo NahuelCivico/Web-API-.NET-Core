@@ -23,6 +23,10 @@ namespace WebAPICountries.Controllers
             this._dbContext = dbContext;
         }
 
+        /// <summary>
+        /// Get Countries
+        /// </summary>
+        /// <returns>Return list of countries</returns>
         [HttpGet]
         public IEnumerable<Pais> Get()
         {
@@ -63,7 +67,7 @@ namespace WebAPICountries.Controllers
                 return BadRequest();
             }
 
-            _dbContext.Entry(pais).State = Microsoft.EntityFrameworkCore.EntityState.Modified;
+            _dbContext.Entry(pais).State = EntityState.Modified;
             _dbContext.SaveChanges();
             return Ok();
         }

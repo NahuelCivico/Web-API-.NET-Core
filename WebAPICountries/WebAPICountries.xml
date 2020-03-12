@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>WebAPICountries</name>
+    </assembly>
+    <members>
+        <member name="M:WebAPICountries.Controllers.PaisController.Get">
+            <summary>
+            Get Countries
+            </summary>
+            <returns>Return list of countries</returns>
+        </member>
+    </members>
+</doc>

@@ -11,7 +11,7 @@
     "IIS Express": {
       "commandName": "IISExpress",
       "launchBrowser": true,
-      "launchUrl": "api/pais",
+      "launchUrl": "swagger",
       "environmentVariables": {
         "Llave_super_secreta": "LCSNSSKJSJHWNBAAAÑDOPWJKJE2SJSNQNJ1S4JD",
         "ASPNETCORE_ENVIRONMENT": "Development"
